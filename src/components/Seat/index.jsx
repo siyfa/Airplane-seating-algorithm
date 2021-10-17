@@ -22,7 +22,7 @@ export default function Seat({ data }) {
         </div>
       ) : (
         <div className="display">
-          {data.seats.map((row, rowI) => {
+          {data?.seats.map((row, rowI) => {
             return (
               <div key={"row" + rowI} className="seat">
                 {row.map((seat, seatI) => {
@@ -55,7 +55,7 @@ export default function Seat({ data }) {
             );
           })}
           <h4 className="block">
-            Remaining Passengers: {data.remainingPassengers}
+            Remaining Passengers: {data?.remainingPassengers}
           </h4>
         </div>
       )}
