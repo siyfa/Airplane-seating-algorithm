@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 500px;
+}
+.app{
+  background-color: rgb(247, 244, 224);
+}
+.container{
+  width: 70%;
+  margin: 10% auto 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1{
+  text-transform: capitalize;
+  font-size: 2.5em;
+}
+@media screen and (max-width: 768px){
+  .app{
+    background-color: white;
+  }
+  .container h1{
+    font-size: 1.7em;
+    margin-left: 10px;
+  }
+  .container{
+    min-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 0;
+    justify-content: flex-start;
+  }
+}
